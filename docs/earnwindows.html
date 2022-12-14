@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Noso Docs</title>
+
+<style>
+.ndDiv {
+  border: 0px outset gray;
+  background-color: white;    
+  text-align: left;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+<!--
+A { text-decoration: none; }
+-->
+</style>
+
+</head>
+
+<body bgcolor="#E5E8E8" link="#FFC300"" vlink="#FFC300">
+<style fprolloverstyle>A:hover {color: #7F8C8D; font-style: bold; font-size: 10pt}</style>
+<font face="arial, helvetica, Roman" color="#7F8C8D" size="2pt">
+<div class="ndDiv">
+  <h4>Earn Noso on Windows</h4>
+  <p>To mine Noso Coin, you will need a wallet and a mining software.
+
+Step 1
+
+Download the latest version of Nosolite wallet from Github.com (here)
+
+Wallet will generate a default address, you can generate as many addresses you need
+
+Step 2
+
+Download the latest miner from Github.com (here)
+
+Below is an example screen, you will have to put in your address, number of cpu cores or threads, miner ID if you want to use the same mining address in multiple rigs. The miner can be set to auto start mining upon running the miner or set to start mining manually.
+
+
+Type “help” ( without the quotes) to get the miner commands. The following commands will appear:
+
+
+Normally source is left untouched and the miner mines SOLO however there is option to join a test pool.
+
+To join the test pool, do the following:
+
+Open the consominer configuration file located in the same folder as consominer and edit the source line:
+
+Before (SOLO mining)
+
+
+After (Pool Mining) – Pool pays when it has completed mining 30 blocks.
+
+
+Save the file, run the Consominer and the miner goes to work (if autostart is set to true) or type mine if autostart is set to false.
+
+HAPPY MINING</p>
+
+</div>
+
+</font>
+</body>
+</html>
