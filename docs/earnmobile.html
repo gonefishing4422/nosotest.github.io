@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Noso Docs</title>
+
+<style>
+.ndDiv {
+  border: 0px outset gray;
+  background-color: white;    
+  text-align: left;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+<!--
+A { text-decoration: none; }
+-->
+code {
+  font-family: Consolas,"courier new";
+  color: black;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+</style>
+
+</head>
+
+<body bgcolor="#E5E8E8" link="#FFC300"" vlink="#FFC300">
+<style fprolloverstyle>A:hover {color: #7F8C8D; font-style: bold; font-size: 10pt}</style>
+<font face="arial, helvetica, Roman" color="#7F8C8D" size="2pt">
+<div class="ndDiv">
+  <h2>Earn Noso using only a mobile device</h2>
+  <p> To earn Noso through PoPW on your Android device, you will first need to download and install a wallet.
+<br><br><strong>Step 1</strong><br><br>
+
+Download and install the latest version of NosoMobile wallet from Github.com <a href="https://github.com/Noso-Project/NosoWallet-Android/releases" target="_blank">(here)</a>.
+<br><br><br>
+<img src=../images/nosomobile.png  alt="Noso Mobile Wallet" width="200" height="400">
+<br><br><br>
+Upon installation, wallet will generate a default address that you will need to copy/paste in a later step. 
+<br><br><strong>Step 2</strong><br><br>
+Install the Termux App from FDroid app store <a href="https://f-droid.org/F-Droid.apk" target="_blank">(here)</a><strong> NOT from Google Playstore!</strong> Once FDroid is installed, open FDroid and Install Termux. 
+<br><br><strong>Step 3</strong><br><br>
+Launch Termux App and perform the following:
+<ul>
+
+
+<li> Update Termux: <code>pkg update</code>
+<br><br>
+<li>Upgrade Termux:  <code>pkg upgrade</code>
+<br><br>
+<li> Install Proot Distro:  <code>pkg install proot-distro</code>
+<br><br>
+<li>Install Debian:  <code>proot-distro install debian</code>
+<br><br>
+<li> Login to Debian:  <code>proot-distro login debian</code>
+<br><br>
+<li> Now that you are logged into Proot-Distro Debian, Update, upgrade and install wget and nano:  <code>apt-get update -y && apt-get upgrade -y && apt-get install wget -y && apt-get install nano -y </code>
+<br><br>
+<li> Download  "Get Noso" app (version 1.3) wget:  <code>wget https://cdn.discordapp.com/attachments/926134526344843366/1043832815105613944/consominer2-v1.3-aarch64 </code>
+<br><br>
+<li> Make "Get Noso" app executable:  <code>chmod +x consominer2-v1.3-aarch64</code>
+</ul>
+<strong>Step 4</strong><br><br>
+Run "Get Noso" app from within Termux/proot-Distro/Debian:  <code> ./consominer2-v1.3-aarch64 </code>
+<br>
+The inital run creates files needed for further configuration.
+<br><br>
+<strong>Step 5</strong><br><br>
+Close "Get Noso" app with the key combination <code> alt+X </code>
+<br>
+Once closed, you will need to edit the consominer2.cfg  configuration file: <code> nano consominer2.cfg</code>
+<br>Update, copy/paste your wallet address into configuration, set your CPU, and test to "false" 
+<br><br>SEE IMAGE BELOW:
+<br><br>
+<img src="../images/consominercfg.png" alt="Noso Mobile Wallet config" width="400" height="300">>
+<br><br>
+Close and save your changes using the key combination <code> CTRL+X</code> and when prompted type <code>Y</code> to save changes.
+<br><br>With configurations in place, you are now ready to start earning coins.  
+<br><br>
+Please note, a typical earning period consists of <strong> 48 blocks </strong> from the moment you start participating. It takes 7 1/2 hours to go through 48 blocks and you will not see coins in your wallet until after the 7 1/2 hours has lapsed. When participating, you will see a "balance" column with coins pending in green. This is the balance of coins you will receive when your participation period has expired. 
+<br><br>
+<img src="../images/consominerbal.png"> 
+</p>
+
+
+</div>
+
+</font>
+</body>
+</html>
