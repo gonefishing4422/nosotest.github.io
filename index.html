@@ -1,14 +1,131 @@
-<html>
-<head>
-<title>Noso Docs</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-</head>
-<frameset cols="200,*" frameborder="0" framespacing="0">
-    <frame src="docs/nav.html" name="Nav" scrolling="no" noresize >
-    <frame src="docs/main.html" name="Main" noresize>
-    
-    
-</frameset>
-<noframes>If you're seeing this then your browser doesn't support frames
-</noframes>
+    <title>Noso Docs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"><a href="#">Noso Docs</a></li>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#gettingstarted">Getting Started</a></li>
+          <li><a href="#nosolitewallet">NosoLite Wallet</a></li>
+          <li><a href="#nosomobilewallet">NosoMobile Wallet</a></li>
+          <li><a href="#earnmasternode">Earn Noso running a Node</a></li>
+          <li><a href="#earnmobile">Earn Noso on a Mobile Device</a></li>
+          <li><a href="#earnwindows">Earn Noso on Windows</a></li>
+          <li><a href="#earnlinux">Earn Noso on Linux</a></li>
+          <li><a href="#gvt">Noso Governance (GVT)</a></li>
+          <li><a href="#troubleshooting">Troubleshooting</a></li>
+          <li><hr><a href="https://github.com/Noso-Project/noso-website/issues" target="_blank">Raise an issue on Github</a></li>
+        </ul>
+      </div>
+
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <div class="content-header">
+          <h1>
+            <a id="menu-toggle" href="#1" class="btn btn-default"><i class="icon-reorder"></i></a>
+       
+          </h1><br>
+
+        </div>
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+	<!-- introducton-->
+		  <h2>
+		<p><a id="introduction">What is Noso?</a></p>
+		</h2>
+		  <p>
+		This page aims to provide basic information about the Noso project and answers common questions new users might have. To receive detailed help with the mining, wallet, or node software please refer to the respective guides. Don’t forget to join us on Discord to receive project updates and have your say in the development of Noso.
+		</p><hr>
+		
+		<h4>Noso Specifications</h4>
+		<p>
+		<ul>
+		<li>Name: Noso
+		<li>Ticker: to be announced soon
+		<li>PoPW algorithm: Nosohash
+		<li>Genesys block: March 7th, 2021
+		<li>Total Supply: 21 million coins
+		<li>Initial Block Reward: 50 Noso
+		<li>Current Block Reward: 50 Noso (split between PoPW and Masternodes)
+		<li>Transaction speed: up to 1900 transactions per second
+		<li>Transaction cost: 0,01% (min. 0,00000010 Noso)
+		<li>Block time: 600 seconds
+		<li>Premine: 0.049% (10303.9073 Noso) used as development fund.
+		</ul>
+		<br><a href="http://nosostats.ddns.net:49002/explorer.html" target="_blank">Noso Explorer</a>
+		<br><a href="http://nosostats2.nosofish.xyz:49002/explorer.html" target="_blank">Noso Explorer (mirror)</a>
+		<br><br><img src="images/productionschedule.png"  alt="Noso Prod Schedule" width="600">
+
+	<!-- NosoLite Wallet-->
+	<br><br><br><br>
+	<p><h2><a id="gettingstarted">Getting Started</a></h2></p>
+	 <p>Download the latest Wallet, Earning App and Node binaries from the Noso Github repository or build them from source.
+	<br>Step 1  Join Noso Discord
+	<br>Step 2  Download and install one of the Noso Wallets
+	<br>Step 3  Purchase or Earn Noso coins
+	<br>Step 4 Setup and earn coins running a Masternode
+	<br>Step 5  Participate in the project in any way you can: Be a positive influence for Noso on Social Media
+	</p>
+
+	<!-- NosoLite Wallet-->
+	<br><br><br><br>
+	<p><h2><a id="nosolitewallet">Noso Lite Wallet</a></h2></p>
+	<hr>
+	<p>NosoLite wallet allows users the ability to generate new addresses, assign aliases to addresses, import or export addresses, password encrypt wallet addresses, and send and receive coins to and from other Noso coin holders.  Nosolite is available for most major operating systems including Windows, Linux and macOS.   Once installed, all wallets will auto-create one default address and are ready for use. 
+	<br><br><br>
+	<img src=images/nosolite.png>
+	<br><br>
+	Download the latest version of NosoLite <a href="https://github.com/Noso-Project/NosoLite/releases"  target="_blank">(here)</a>
+	</p>
+
+	<!-- NosoLite Wallet-->
+	<br><br><br><br>
+	<p><h2><a id="nosomobilewallet">Noso Mobile Wallet</a></h2></p>
+	<p>NosoMobile wallet allows users the ability to generate new addresses, assign aliases to addresses, import or export addresses, password encrypt wallet addresses, and send and receive coins to and from other Noso coin holders.  NosoMobile is available for Android OS.   Once installed, NosoMobile will auto-create one default address and is ready for use.</p>
+	<br><br><br>
+	<img src=images/nosomobile.png  alt="Noso Mobile Wallet" width="200" height="400">
+	<br><br><br>
+	Download the latest version of NosoMobile <a href="https://github.com/Noso-Project/NosoWallet-Android/releases"  target="_blank">(here)</a>
+
+
+
+       </p>
+        </div>
+      </div>
+      
+    </div>
+	
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+  </body>
 </html>
