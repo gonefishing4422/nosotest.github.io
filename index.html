@@ -44,7 +44,7 @@
         <div class="content-header">
           <h1>
             <a id="menu-toggle" href="#1" class="btn btn-default"><i class="icon-reorder"></i></a>
-       
+     SITE UNDER CONSTRUCTION  
           </h1><br>
 
         </div>
@@ -77,7 +77,7 @@
 		<br><a href="http://nosostats2.nosofish.xyz:49002/explorer.html" target="_blank">Noso Explorer (mirror)</a>
 		<br><br><img src="images/productionschedule.png"  alt="Noso Prod Schedule" width="600">
 
-	<!-- NosoLite Wallet-->
+	<!-- Getting Started-->
 	<br><br><br><br>
 	<p><h2><a id="gettingstarted">Getting Started</a></h2></p>
 	 <p>Download the latest Wallet, Earning App and Node binaries from the Noso Github repository or build them from source.
@@ -99,7 +99,7 @@
 	Download the latest version of NosoLite <a href="https://github.com/Noso-Project/NosoLite/releases"  target="_blank">(here)</a>
 	</p>
 
-	<!-- NosoLite Wallet-->
+	<!-- Noso Mobile Wallet-->
 	<br><br><br><br>
 	<p><h2><a id="nosomobilewallet">Noso Mobile Wallet</a></h2></p>
 	<p>NosoMobile wallet allows users the ability to generate new addresses, assign aliases to addresses, import or export addresses, password encrypt wallet addresses, and send and receive coins to and from other Noso coin holders.  NosoMobile is available for Android OS.   Once installed, NosoMobile will auto-create one default address and is ready for use.</p>
@@ -108,9 +108,197 @@
 	<br><br><br>
 	Download the latest version of NosoMobile <a href="https://github.com/Noso-Project/NosoWallet-Android/releases"  target="_blank">(here)</a>
 
+	<!-- Earn Noso running a Node-->
+	<br><br><br><br>
+	<p><h2><a id="earnmasternode">Earn Noso running a Node</a></h2></p>
+	<p> To run a masternode, from inside of NosoNode, enter your funds address (address with sufficient Noso) into the “node” tab of Noso Wallet; “test” then “save.” Masternode rewards will begin within 2 blocks and you will see your icon at the bottom left corner of NosoWallet change from   to .  
+	<br>
+	<br>Masternodes (MN)
+	<br>
+	<img src="images/nosonode2.png" alt="Noso Node" width="300">
+	</p>
 
 
-       </p>
+	<!-- Earn Noso on a Mobile Device-->
+	<br><br><br><br>
+	<p><h2><a id="earnmobile">Earn Noso using only a Mobile Device</a></h2></p>
+	 <p> To earn Noso through PoPW on your Android device, you will first need to download and install a wallet.
+	<br><br><strong>Step 1</strong><br><br>
+	
+	Download and install the latest version of NosoMobile wallet from Github.com <a href="https://github.com/Noso-Project/NosoWallet-Android/releases" target="_blank">(here)</a>.
+	<br><br><br>
+	<img src=images/nosomobile.png  alt="Noso Mobile Wallet" width="200" height="400">
+	<br><br><br>
+	Upon installation, wallet will generate a default address that you will need to copy/paste in a later step. 
+	<br><br><strong>Step 2</strong><br><br>
+	Install the Termux App from FDroid app store <a href="https://f-droid.org/F-Droid.apk" target="_blank">(here)</a><strong> NOT from Google Playstore!</strong> Once FDroid is installed, open FDroid and Install Termux. 
+	<br><br><strong>Step 3</strong><br><br>
+	Launch Termux App and perform the following:
+	<ul>
+	
+	
+	<li> Update Termux: <code>pkg update</code>
+	<br><br>
+	<li>Upgrade Termux:  <code>pkg upgrade</code>
+	<br><br>
+	<li> Install Proot Distro:  <code>pkg install proot-distro</code>
+	<br><br>
+	<li>Install Debian:  <code>proot-distro install debian</code>
+	<br><br>
+	<li> Login to Debian:  <code>proot-distro login debian</code>
+	<br><br>
+	<li> Now that you are logged into Proot-Distro Debian, Update, upgrade and install wget and nano:  <code>apt-get update -y && apt-get upgrade -y && apt-get install wget -y && apt-get install nano -y </code>
+	<br><br>
+	<li> Download  "Get Noso" app (version 1.3) wget:  <code>wget https://cdn.discordapp.com/attachments/926134526344843366/1043832815105613944/consominer2-v1.3-aarch64 </code>
+	<br><br>
+	<li> Make "Get Noso" app executable:  <code>chmod +x consominer2-v1.3-aarch64</code>
+	</ul>
+	<strong>Step 4</strong><br><br>
+	Run "Get Noso" app from within Termux/proot-Distro/Debian:  <code> ./consominer2-v1.3-aarch64 </code>
+	<br>
+	The inital run creates files needed for further configuration.
+	<br><br>
+	<strong>Step 5</strong><br><br>
+	Close "Get Noso" app with the key combination <code> alt+X </code>
+	<br>
+	Once closed, you will need to edit the consominer2.cfg  configuration file: <code> nano consominer2.cfg</code>
+	<br>Update, copy/paste your wallet address into configuration, set your CPU, and test to "false" 
+	<br><br>SEE IMAGE BELOW:
+	<br><br>
+	<img src="images/consominercfg.png" alt="Noso Mobile Wallet config" width="400" height="300">>
+	<br><br>
+	Close and save your changes using the key combination <code> CTRL+X</code> and when prompted type <code>Y</code> to save changes.
+	<br><br>With configurations in place, you are now ready to start earning coins.  
+	<br><br>
+	Please note, a typical earning period consists of <strong> 48 blocks </strong> from the moment you start participating. It takes 7 1/2 hours to go through 48 blocks and you will not see coins in your wallet until after the 7 1/2 hours has lapsed. When participating, you will see a "balance" column with coins pending in green. This is the balance of coins you will receive when your participation period has expired. 
+	<br><br>
+	<img src="images/consominerbal.png"> 
+	</p>
+
+
+
+	<!-- Earn Noso on Windows-->
+	<br><br><br><br>
+	<p><h2><a id="earnwindows">Earn Noso on Windows</a></h2></p>
+	 <p>To mine Noso Coin, you will need a wallet and a mining software.
+	<br><br>
+	Step 1
+	<br>
+	Download the latest version of Nosolite wallet from Github.com (here)
+	
+	Wallet will generate a default address, you can generate as many addresses you need
+	<br><br>
+	Step 2
+	<br>
+	Download the latest miner from Github.com (here)
+	<br><br>
+	Below is an example screen, you will have to put in your address, number of cpu cores or threads, miner ID if you want to use the same mining address in multiple rigs. The miner can be set to auto start mining upon running the miner or set to start mining manually.
+	<br><br>
+	
+	Type “help” ( without the quotes) to get the miner commands. The following commands will appear:
+	<br><br>
+	
+	Normally source is left untouched and the miner mines SOLO however there is option to join a test pool.
+	<br><br>
+	To join the test pool, do the following:
+	<br><br>
+	Open the consominer configuration file located in the same folder as consominer and edit the source line:
+	<br><br>
+	Before (SOLO mining)
+	<br><br>
+	
+	After (Pool Mining) – Pool pays when it has completed mining 30 blocks.
+	<br><br>
+	
+	Save the file, run the Consominer and the miner goes to work (if autostart is set to true) or type mine if autostart is set to false.
+	<br><br>
+	HAPPY MINING</p>
+	
+
+
+	<!-- Earn Noso on Linux-->
+	<br><br><br><br>
+	<p><h2><a id="nearnlinux">Earn Noso on Linux</a></h2></p>
+	 <p>To mine Noso Coin, you will need a wallet and a mining software.
+	<br><br>
+	Step 1
+	<br><br>
+	Download the latest version of Nosolite wallet from Github.com (here)
+	<br><br>
+	Wallet will generate a default address, you can generate as many addresses you need. Alternatively you can use Noso Web Wallet, download Noso Android wallet, or download Noso Wallet both found on Github (here).
+	<br><br>
+	Step 2 (consominer)
+	<br><br>
+	Mine on Linux Ubuntu using consominer (These steps install consominer v0.70. You should download the latest version located on Github (here).
+	<br><br>
+	From within a terminal on your Linux machine, enter the following commands:
+	<br><br>
+	sudo apt-get update -y && apt-get upgrade -y
+	wget https://github.com/Noso-Project/consominer/releases/download/v0.70/consominer-v0.70-x86_64-linux.tar.gz
+	tar -xvzf consominer-v0.70-x86_64-linux.tar.gz
+	chmod +x consominer
+	./consominer
+	Note, these steps assume x86 64bit hardware. If your miner uses arm or aarch64 CPU, you will need to use a different binary. Refer to “Mine Noso Coin with Android and Termux” for your ARM binary download.
+	<br><br>
+	Step 3
+	<br><br>
+	After launching consominer,
+	<br><br>
+	Select an address from your wallet and configure it by entering “address {YourNosoWalletAddress}”
+	To determine how many CPUs (X) provide the highest hash rate for your hardware enter “test {CPU count}”
+	After determining how many CPUs you want to use for mining, enter “cpu {X}”
+	Optionally, to have your miner start automatically upon launch, enter “autostart true”
+	Optionally, enter, “source clear” to solo mine or enter “source {IP:Port}” to pool mine.
+	Optionally, if solo mining make sure to set your minerid. “minerid [0-8100]”
+	Enter “mine” to start mining.
+	Note: to pool mine, enter source pool:port. Enter source add pool:port to add additional “backup” pools. Refer to (pools) for the most updated pool list.
+	<br><br>
+	Step 2 (noso-2m)
+	<br><br>
+	Mine on Linux Ubuntu using noso-2m (These steps install noso-2m v0.2.2. You should download the latest version for your hardware located on Github (here).
+	<br><br>
+	apt-get update -y && apt-get upgrade -y
+	wget https://github.com/f04ever/noso-2m/releases/download/v0.2.2/noso-2m-v0.2.2-linux-x86_64.tar.gz
+	tar -xvzf noso-2m-v0.2.2-linux-x86_64.tar.gz
+	chmod +x noso-2m
+	./noso-2m -a {address} -t {threads} i {miner instance} –pools=Pool1:IPAddress:port;Pool2:IPAddress:port”
+	MINING POOL EXAMPLE: ./noso-2m.exe -a ThisIsMyNosoMiningAddress -t 9 -i 6 –pools=Dev:45.146.252.103:8082;rukzuk:173.199.122.137:8082;f04ever:209.126.80.203:8082?
+	<br><br>
+	MINING SOLO EXAMPLE: ./noso-2m.exe -a ThisIsMyNosoMiningAddress -t 9 -i 6
+	<br><br>
+	Note, these steps assume x86 64bit hardware. If your miner uses hardware other than x86 64, download your hardware appropriate version (here). Also, if you are SOLO mining with multiple instances, you must define your miner instance.
+	<br><br>
+	HAPPY MINING!</p>
+
+
+
+	<!-- Noso Governance (GVT)-->
+	<br><br><br><br>
+	<p><h2><a id="gvt">Noso Governance (GVT)</a></h2></p>
+	  <p>Built into Noso protocol is a Governance Token (GVT) poll management system. This system allows GVT owners to create project related polls for consideration which are voted upon by other GVT owners. In order to participate in the voting process, an individual must acquire through purchase or trade, a Noso Governance Token (GVT). These tokens are available to anyone wanting to participate in the voting process.
+	<br><br>
+	Governance Tokens have the following specifications:
+	<br><br>
+	GVTs are transferable
+	<br><br>
+	1 GVT = 1 vote
+	<br><br>
+	All GVT owners can start polls
+	<br><br>
+	Polls with +75% of approbation will be mandatory; +50% will be recommended
+	<br><br>
+	New GVTs are minted every year only (on demand, after government poll approbation)
+	<br><br>
+	GVTs can be banned by other GVTs owners in certain circumstances.  When banned, the GVT owner becomes suspended from creating new polls or participating on existing ones for 90 days.
+	<br><br>
+	Each GVT can only run one poll at a time
+	<br><br>
+	GVTs rules itself can be adjusted by a GVT votation.
+	<br><br>
+	Example GVT poll:  Should NOSO reduce the PoW reward to 5%?
+	</p>  
+
+     </p>
         </div>
       </div>
       
@@ -119,6 +307,7 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+
 
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>
