@@ -185,7 +185,7 @@
 	<br><br>
 	<strong>Step 1</strong>
 	<br>
-	Download the and install latest version of Nosolite wallet from Github.com <a href="https://github.com/Noso-Project/NosoLite/releases" target="_blank">(here)</A>
+	Download the and install latest version of Nosolite wallet for your OS from Github.com <a href="https://github.com/Noso-Project/NosoLite/releases" target="_blank">(here)</A>
 	
 	Upon installation, Nosolite will generate a default address to use for earning and holding Noso coins. 
 	<br><br>
@@ -215,57 +215,49 @@
 
 	<!-- Earn Noso on Linux-->
 	<br><br><br><br>
-	<p><h2><a id="nearnlinux">Earn Noso on Linux</a></h2></p>
-	 <p>To mine Noso Coin, you will need a wallet and a mining software.
+	<p><h2><a id="earnlinux">Earn Noso on Linux</a></h2></p>
+	 <p>To earn Noso Coin, you will need a wallet and earning software
 	<br><br>
-	Step 1
+	<strong>Step 1</strong>
+	<br>
+	Download the and install latest version of Nosolite wallet for your OS from Github.com <a href="https://github.com/Noso-Project/NosoLite/releases" target="_blank">(here)</a>
+	<br>
+	Upon installation, Nosolite will generate a default address to use for earning and holding Noso coins. 
 	<br><br>
-	Download the latest version of Nosolite wallet from Github.com (here)
+	<strong>Step 2</strong>
+	<br>
+	Download and install the latest "Get Noso"software from Github.com <a href="https://github.com/Noso-Project/consominer2/releases" target="_blank">(here)</a>
 	<br><br>
-	Wallet will generate a default address, you can generate as many addresses you need. Alternatively you can use Noso Web Wallet, download Noso Android wallet, or download Noso Wallet both found on Github (here).
-	<br><br>
-	Step 2 (consominer)
-	<br><br>
-	Mine on Linux Ubuntu using consominer (These steps install consominer v0.70. You should download the latest version located on Github (here).
-	<br><br>
+	
 	From within a terminal on your Linux machine, enter the following commands:
+	<br>
+	<code>sudo apt-get update -y && apt-get upgrade -y</code>
+	<br>
+	<code>wget https://github.com/Noso-Project/consominer2/releases/download/v1.5/consominer2-v1.5-x86_64-linux.tar.gz</code>
+	<br>
+	<code>	tar -xvzf consominer2-v1.5-x86_64-linux.tar.gz</code>
+	<br>
+	<code>chmod +x consominer2-x86_64-linux</code>
+	<br>
+	<code>./consominer2-x86_64-linux</code>
 	<br><br>
-	sudo apt-get update -y && apt-get upgrade -y
-	wget https://github.com/Noso-Project/consominer/releases/download/v0.70/consominer-v0.70-x86_64-linux.tar.gz
-	tar -xvzf consominer-v0.70-x86_64-linux.tar.gz
-	chmod +x consominer
-	./consominer
 	Note, these steps assume x86 64bit hardware. If your miner uses arm or aarch64 CPU, you will need to use a different binary. Refer to “Mine Noso Coin with Android and Termux” for your ARM binary download.
 	<br><br>
-	Step 3
+	<strong>Step 3</strong>
 	<br><br>
-	After launching consominer,
+	After launching "Get Noso" software, press <code>ALT+X</code> to close.  The first "run" will auto-create your configuration files.
 	<br><br>
-	Select an address from your wallet and configure it by entering “address {YourNosoWalletAddress}”
-	To determine how many CPUs (X) provide the highest hash rate for your hardware enter “test {CPU count}”
-	After determining how many CPUs you want to use for mining, enter “cpu {X}”
-	Optionally, to have your miner start automatically upon launch, enter “autostart true”
-	Optionally, enter, “source clear” to solo mine or enter “source {IP:Port}” to pool mine.
-	Optionally, if solo mining make sure to set your minerid. “minerid [0-8100]”
-	Enter “mine” to start mining.
-	Note: to pool mine, enter source pool:port. Enter source add pool:port to add additional “backup” pools. Refer to (pools) for the most updated pool list.
+	Open "consominer2.cfg" using a text editor like Nano.  <code> nano consominer2.cfg</code>
+	<br>
+	Select an address from your NosoLite wallet and modify your consominer2.cfg file by modifying the following fields:
+	<br>
+	<ul>
+	<li><code>address AddressFromYourNosoLiteWallet
+	<li>cpu 1 (setting this to more than 1 CPU is wasteful and doesn't increase your coins earned)
+	<li>test False (set this to "False" so that Earning starts as soon as the app opens)</code>
+	</ul>
 	<br><br>
-	Step 2 (noso-2m)
-	<br><br>
-	Mine on Linux Ubuntu using noso-2m (These steps install noso-2m v0.2.2. You should download the latest version for your hardware located on Github (here).
-	<br><br>
-	apt-get update -y && apt-get upgrade -y
-	wget https://github.com/f04ever/noso-2m/releases/download/v0.2.2/noso-2m-v0.2.2-linux-x86_64.tar.gz
-	tar -xvzf noso-2m-v0.2.2-linux-x86_64.tar.gz
-	chmod +x noso-2m
-	./noso-2m -a {address} -t {threads} i {miner instance} –pools=Pool1:IPAddress:port;Pool2:IPAddress:port”
-	MINING POOL EXAMPLE: ./noso-2m.exe -a ThisIsMyNosoMiningAddress -t 9 -i 6 –pools=Dev:45.146.252.103:8082;rukzuk:173.199.122.137:8082;f04ever:209.126.80.203:8082?
-	<br><br>
-	MINING SOLO EXAMPLE: ./noso-2m.exe -a ThisIsMyNosoMiningAddress -t 9 -i 6
-	<br><br>
-	Note, these steps assume x86 64bit hardware. If your miner uses hardware other than x86 64, download your hardware appropriate version (here). Also, if you are SOLO mining with multiple instances, you must define your miner instance.
-	<br><br>
-	HAPPY MINING!</p>
+	HAPPY EARNING</p>
 
 
 
