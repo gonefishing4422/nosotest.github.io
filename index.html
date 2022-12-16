@@ -18,12 +18,13 @@
   </head>
 
   <body>
-  
+
     <div id="wrapper">
-      
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
+       <!---logo--->
+       <!--- <img src="images/nosologo.webp" length="100" width="100" alt="NosoLogo">-->
           <li class="sidebar-brand"><a href="#">Noso Docs</a></li>
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#gettingstarted">Getting Started</a></li>
@@ -180,39 +181,35 @@
 	<!-- Earn Noso on Windows-->
 	<br><br><br><br>
 	<p><h2><a id="earnwindows">Earn Noso on Windows</a></h2></p>
-	 <p>To mine Noso Coin, you will need a wallet and a mining software.
+	 <p>To earn Noso Coin, you will need a wallet and earning software
 	<br><br>
-	Step 1
+	<strong>Step 1</strong>
 	<br>
-	Download the latest version of Nosolite wallet from Github.com (here)
+	Download the and install latest version of Nosolite wallet from Github.com <a href="https://github.com/Noso-Project/NosoLite/releases" target="_blank">(here)</A>
 	
-	Wallet will generate a default address, you can generate as many addresses you need
+	Upon installation, Nosolite will generate a default address to use for earning and holding Noso coins. 
 	<br><br>
-	Step 2
+	<strong>Step 2</strong>
 	<br>
-	Download the latest miner from Github.com (here)
+	Download and install the latest Noso Earning software from Github.com <a href="https://github.com/Noso-Project/consominer2/releases" target="_blank">(here)</a>
 	<br><br>
-	Below is an example screen, you will have to put in your address, number of cpu cores or threads, miner ID if you want to use the same mining address in multiple rigs. The miner can be set to auto start mining upon running the miner or set to start mining manually.
+	You may be required to create an exception rule in your antivirus software to run the application.
 	<br><br>
-	
-	Type “help” ( without the quotes) to get the miner commands. The following commands will appear:
+	<strong>Step 3</strong>
+	<br>
+	<ul>
+	<li>Launch the Noso Earning app to autocreate files needed for configuration.
+	<li>Modify the consominer2.cfg configuration file, updating the following fields:
+	<li><code>address AddressFromYourNosoLiteWallet
+	<li>cpu 1 (setting this to more than 1 CPU is wasteful and doesn't increase your coins earned)
+	<li>test False (set this to "False" so that Earning starts as soon as the app opens)</code>
+	</ul>
+	<br>	
+	<strong>Step 4</strong>
+	<br>
+	Launch your "Noso Earn" software to start earning Noso coins.
 	<br><br>
-	
-	Normally source is left untouched and the miner mines SOLO however there is option to join a test pool.
-	<br><br>
-	To join the test pool, do the following:
-	<br><br>
-	Open the consominer configuration file located in the same folder as consominer and edit the source line:
-	<br><br>
-	Before (SOLO mining)
-	<br><br>
-	
-	After (Pool Mining) – Pool pays when it has completed mining 30 blocks.
-	<br><br>
-	
-	Save the file, run the Consominer and the miner goes to work (if autostart is set to true) or type mine if autostart is set to false.
-	<br><br>
-	HAPPY MINING</p>
+	HAPPY EARNING!</p>
 	
 
 
