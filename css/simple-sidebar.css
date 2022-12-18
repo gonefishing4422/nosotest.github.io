@@ -96,10 +96,10 @@
 }
 
 #menu-toggle {
-  display: hidden;
+  display:none;
   position:fixed;
-   bottom: 50px;
-   left: 50px;   
+   top: 20px;
+   right: 20px;   
 }
 
 
@@ -119,8 +119,8 @@
 .mainWrapnarrow {width:90%; margin:0 auto;}
  }
 
- @media (max-width:767px) {
-}
+@media (max-width:767px) {
+
 
 #wrapper {
   padding-left: 0;
