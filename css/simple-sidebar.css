@@ -107,7 +107,16 @@
 }
 
 @media (max-width:767px) {
-
+}
+@media (min-width:320px) { 
+.mainWrapnarrow {width:90%; margin:0 auto;}
+}
+@media (min-width:481px) {
+.mainWrapnarrow {width:90%; margin:0 auto;}
+ }
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+.mainWrapnarrow {width:90%; margin:0 auto;}
+ }
 #wrapper {
   padding-left: 0;
 }
