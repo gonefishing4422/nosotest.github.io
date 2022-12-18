@@ -18,6 +18,17 @@
 #page-content-wrapper {
   width: 100%;
   border: 0px outset gray;
+  background-color: #F2F4F4;    
+  text-align: left;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+#page-contentdiv-wrapper {
+  width: 100%;
+  border: 1px outset gray;
   background-color: white;    
   text-align: left;
   padding-top: 50px;
@@ -47,7 +58,7 @@
 }
 
 .sidebar-nav li a:hover {
-  color: #fff;
+  color: purple;
   background: rgba(255,255,255,0.2);
   text-decoration: none;
 }
@@ -85,8 +96,12 @@
 }
 
 #menu-toggle {
-  display: none;
+  display: block
+  position:fixed
+      bottom: 50px;
+    left: 50px;   
 }
+
 
 .inset {
   padding: 20px;
